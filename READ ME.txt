@@ -1,0 +1,30 @@
+Requirments :
+
+flask
+Flask-SQLAlchemy
+flask-login
+
+Python:
+
+pickle
+time
+hashlib/sha256
+
+Tutorials:
+
+flask app Tutorial
+
+To Run the App:
+main.py
+
+Go to view the App:
+
+http://127.0.0.1:5000/
+
+To see the Database:
+Extension SQLite
+
+Users that already exist:
+labimorad---> Password : 1234567
+lleites---> Password:1345678
+You can creat new users with Sing Up

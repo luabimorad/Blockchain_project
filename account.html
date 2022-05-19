@@ -1,0 +1,57 @@
+{% extends "login.html" %}{% block title %}My Account{% endblock %}{% block
+content %}
+
+<style>
+     body {
+      background: rgba(255, 192, 203, 0.315);
+  }
+</style> 
+
+<form method="POST">
+  <h3 align="center">My Account</h3>
+
+  <body>
+    <br>
+    <table border='1' cellpadding='0' cellspacing='0' width='600' bgcolor='#F6F6F6' bordercolor='#FFFFFF'>
+      <tr>
+        <td width='300' style='font-weight: bold'>User Name:{{user.user_name}}</td>
+        <td width='300' style='font-weight: bold'>Name : {{user.first_name}}</td>
+        <td width='300' style='font-weight: bold'>Surname: {{user.surname}}</td>
+        <td width='300' style='font-weight: bold'>Q Coins: {{user.LuCoins}}</td>
+        <td width='300' style='font-weight: bold'>P Coins: 50 </td>
+        <td width='300' style='font-weight: bold'>Amount: {{user.LuCoins*50}} </td>
+      </tr>
+
+    </table>
+
+  </body>
+  <h5>BUY COINS</h5>
+  <div class="form-group">
+    <label for="LuCoins"> LuCoins </label>
+    <input type=number class="form-control" id="buy_LuCoins" name="buy_LuCoins" min="1" max="50"
+      placeholder="Enter how many coins do you want to buy? " />
+  </div>
+  <div class="form-group">
+    <label for="user_name">User Name</label>
+    <input type=text class="form-control" id="buy_whom" name="buy_whom" placeholder="From whom ? Enter user_name" />
+  </div>
+
+  <button type="Buy" class="btn btn-primary" name="buy">Buy Coins</button>
+
+
+  <h5>SELL COINS</h5>
+  <div class="form-group">
+    <label for="LuCoins"> LuCoins </label>
+    <input type=number class="form-control" id="sell_LuCoins" name="sell_LuCoins" min="1" max="50"
+      placeholder="Enter how many coins do you want to sell? " />
+  </div>
+
+  <div class="form-group">
+    <label for="user_name">User Name</label>
+    <input type=text class="form-control" id="sell_whom" name="sell_whom" placeholder="To Whom?:Enter user_name" />
+  </div>
+
+  <button type="Sell" class="btn btn-primary" name="sell">Sell Coins</button>
+
+</form>
+{% endblock %}
